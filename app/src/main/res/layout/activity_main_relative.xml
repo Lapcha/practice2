@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageCats"
+        android:layout_width="413dp"
+        android:layout_height="265dp"
+
+
+        android:src="@drawable/cats"
+
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="@dimen/header"
+        android:text="@string/Recipient"
+
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageCats"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="6"
+        android:gravity="center"
+        android:textSize="@dimen/recipient"
+
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/buttonSend"
+        android:text="@string/buttonText"
+        android:textColor="@color/white"
+
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText"/>
+
+    <ImageView
+        android:id="@+id/imageHeart"
+        android:layout_width="225dp"
+        android:layout_height="62dp"
+
+        android:src="@drawable/heart"
+        android:layout_marginTop="25dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button"/>
+
+    <TextView
+        android:id="@+id/lastRecipient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=""
+        android:textSize="@dimen/lastRecipient"
+
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageHeart"/>
+
+</RelativeLayout>
